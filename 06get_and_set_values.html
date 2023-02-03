@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <h1 id="xyz"></h1>
+    <h2></h2>
+
+
+
+    <b id="b">Manju</b>
+    <a href="xyz.html" id="a">Link</a>
+    <input type="text" name="" value="" id="">
+    <img src="x.jpg" alt="">
+
+
+    <button id="b1">get b</button>
+    <button id="b2">get a</button>
+    <button id="b3">get input</button>
+    <button id="b4">get img</button>
+
+    <script>
+        linktag = document.getElementById('a')
+        console.log(linktag);
+
+        $('h1').text('hello world');
+        $('h2').html('how are you');
+        $('input').val('heading 2');
+
+        $('a').attr("href","test.html");
+        console.log($('a'));
+
+        $('#b1').click(function(){
+            // alert($('#b').text());
+            alert($('#b').html());
+        })
+           
+         $('#b2').click(function (){
+            // alert($('#b').text());
+            alert($('input').attr('type'));
+         })
+         $('#b4').click(function (){
+            alert($('img').attr('src'));
+         })
+        // $('input').val();
+
+        // console.log($('input').val());
+
+    </script>
+</body>
+</html>
