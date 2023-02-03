@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        .main *{
+            border: 1px solid gray;
+            display: block;
+            padding: 15px;
+        }
+        /* body{
+            border: 1px solid gray;
+        } */
+        /* .main{
+            border: 1px solid gray;
+        } */
+
+
+    </style>
+</head>
+<body>
+
+    <div class="xyz">
+        <h1>hello</h1>
+        <p>paragraph</p>
+        <h2>heading2</h2>
+    </div>
+    <div class="main">
+        <div class="grandparent">grandparent
+            <ul>parent
+                <li>child
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 style="margin:100px 0"></h1>
+
+        <div class="main">
+            <div class="GrandParent">GrandParent
+                <ul>Parent 
+                    <li>Child 
+                        <span>Span</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    <script>
+//    $('h1').siblings().css("border","2px solid green");
+
+
+// $('span').parent().css("border","1px solid yellow");
+
+// $('ul').parent().css("border","1px solid pink");
+// $('span').parents().css("border","1px solid hotpink");
+
+// $('.grandparent').parents().css("border","3px solid green");
+// $('span').parentsUntil('.main').css("border","2px solid blue");
+// $('ul').children().css("background","yellow");
+$('.grandparent').find('ul').css("border","2px solid green");
+    </script>
+</body>
+</html>
