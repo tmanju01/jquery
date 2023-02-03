@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        .q,.a{
+            background: crimson;
+            border: 2px solid yellow;
+        }
+        .a{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="q">Question</div>
+    <div class="a">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, dolorum quia 
+        blanditiis ipsa laudantium fugit voluptatibus dicta sit velit eaque
+         veritatis, a, dolores repellat modi reprehenderit tenetur perspiciatis provident veniam.</div>
+
+         <div class="text" id="d1"></div>
+
+         <script>
+            $('.q').click(function (){
+                $('.a').slideDown();
+            })
+
+            div =  document.getElementById('d1');
+
+        //  console.log(div);
+
+        //    div.style.width="250px";
+        //    div.style. height="250px";
+        //     div.style.background="pink";
+
+            
+    // $('tag-name/#id-name/.class-Name').css("property","value");
+
+    // $('#d1').css("height","200px");
+    // $('#d1').css("width","200px");
+    // $('#d1').css("background","gray");
+
+    $('#d1').css({"height":"200px","width":"200px","background":"gray"})
+
+
+         </script>
+
+</body>
+</html>
