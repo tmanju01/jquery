@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <style>
+        div{
+            border: 2px solid green;
+        }
+        /* h3:first-child{
+            background: yellow;
+        } */
+        h3:nth-child(4){
+            background: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3 class="x" id="h">heading1</h3>
+        <h3 class="x">heading1</h3>
+        <h3>heading1</h3>
+        <h3 class="x">heading1</h3>
+        <h3>heading1</h3>
+    </div>
+
+    <div>
+        <h3 class="x" id="h">heading1</h3>
+        <h3 class="x">heading1</h3>
+        <h3>heading1</h3>
+        <h3 class="x">heading1</h3>
+        <h3>heading1</h3>
+    </div>
+   <script>
+    // $('#h').first().css("background","hotpink");
+    // $('h3').last().css("background","blue");
+    // $('h3').eq(2).css("background","blueviolet");
+
+    // $('h3').eq(4).css("background","black");
+    // $('div').first().css("background","hotpink");
+    $('h3').not('.x').css("background","blue");
+   </script>
+</body>
+</html>
