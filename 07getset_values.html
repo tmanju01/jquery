@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="date" name="" id="" >
+    <h2 id="count">0</h2>
+    <div onclick="kaiPan()"> Div tag</div>
+
+    <p>paragraph</p>
+    <h1>Heading 1</h1>
+    <input type="text" value="input TYPE TEXT"  >
+
+    <img src="x.jpg" alt="" height="200px" width="200px" id="i1">
+
+    <a href="home.html" id="a_tag">HOME</a>
+
+
+    
+    <script>
+        // $('#count').click(function(){
+        //     for(i=0;i<=10;i++)
+        // {
+        //     count.innerHTML = i;
+        // }
+        // })
+
+        c = document.getElementById('count');
+        // c.innerHTML="10";
+
+        function kaiPan(){
+            for(i=0;i<=10;i++){
+                c.innerHTML=i;
+            }
+        }
+        // test = document.getElementById('para').src
+
+        //  alert( $('p').text());
+        // alert( $('h1').text());
+        // alert( $('div').text());
+        // alert( $('a').text());
+
+        // alert( $('p').html());
+        // alert( $('h1').html());
+        // alert( $('div').html());
+        // alert( $('a').html());
+
+        // alert($('input').val());
+        // alert($('input').attr('value'));
+        // alert($('img').attr('src'));
+
+        $('p').text("Somthing else....!");
+        $('p').html('hello');
+
+         // $('p').text('Something <h1> Else...!</h1>');
+
+        // $('p').html('Something <h1> Else...!</h1>');
+        // $('div').html('Something <h1> Else...!</h1>');
+
+        // $('a').html('Something <h1> Else...!</h1>');
+
+        // $('input').val("Manju")
+
+            
+        // $('a').attr("href","x.html");
+//         $('img').attr("src","y.jpg");
+
+$('a').attr("href","x.html");
+t = document.getElementById('a_tag');
+t1 = document.getElementById('i1')
+
+console.log(t )
+console.log(t1 )
+
+
+
+    </script>
+</body>
+</html>
