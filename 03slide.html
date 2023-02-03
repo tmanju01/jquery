@@ -62,6 +62,18 @@
 
 
      <script>
+        $(document).ready(function(){
+  $(".x").click(function(){
+    $('.ans').toggle();
+    $(".ans").animate({
+        
+      top: '250px',
+      opacity: '0.5',
+      height: '150px',
+      width: '100%'
+    });
+  });
+});
 
         // $('h1').css("color","blue");
         //  $('h1').css("height","200px");
@@ -96,9 +108,9 @@
 
 
 
-        $('.x').click(function (){
-            $('.ans').slideToggle()
-        })
+        // $('.x').click(function (){
+        //     $('.ans').slideToggle(2000)
+        // })
 
      </script>
     
