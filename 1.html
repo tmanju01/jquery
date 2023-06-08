@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Countdown Timer</h1>
+    
+    <h2 id="counter"></h2>
+
+        
+    <script>
+//         let button = document.getElementById('button');
+//          let timer = document.getElementById('h2');
+
+//        let secs = 0;
+
+//         button.addEventListener('click',() => {
+//     let interval = setInterval(() => {
+//         if(secs == 250) {
+//             timer.innerText = secs;
+//             clearInterval(interval);
+//             return;
+//         }
+//         timer.innerText = secs;
+//         secs++;
+//     },100);
+// });
+let counts=setInterval(updated);
+        let upto=0;
+        function updated(){
+            var count= document.getElementById("counter");
+            count.innerHTML=++upto;
+            if(upto===1000)
+            {
+                clearInterval(counts);
+            }
+        }
+    </script>
+</body>
+</html>
